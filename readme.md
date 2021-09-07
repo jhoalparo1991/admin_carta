@@ -10,7 +10,8 @@ Desarrollado con
 
 ## Setting
 change values in the file **config.php** in the folder **Config**
-
+ * create a folder in the paht public for uploads images
+   * path : public/img/uploads
 
 
 > Jhonatan Padilla Rovira
