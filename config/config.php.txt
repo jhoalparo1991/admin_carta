@@ -1,0 +1,15 @@
+<?php 
+
+define('URL','http://localhost:8080/admin_carta');
+
+define('DATABASE','database');
+define('HOSTNAME','localhost');
+define('USERNAME','root');
+define('PORT','3306');
+define('PASSWORD','root');
+define('CHARSET','utf8');
+define('DNS','mysql');
+define('NAME_APP','MVC');
+
+
+?>

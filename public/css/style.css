@@ -1,0 +1,24 @@
+/* Login styles */
+
+.cardTile {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.button {
+    background-color: #663E33;
+    border: none;
+    display: block;
+    width: 100%;
+}
+
+.button:hover {
+    background-color: #533d37;
+}
+
+.input {
+    border: none;
+    border-bottom: 2px dotted #533d37;
+    background-color: white;
+    color: #663E33;
+}

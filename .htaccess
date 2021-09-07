@@ -1,0 +1,9 @@
+RewriteEngine On
+
+ErrorDocument 404 http://localhost:8080/mvc/errorescontroller/index
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-l
+
+RewriteRule ^(.*)$ index.php?url=$1 [L,QSA]

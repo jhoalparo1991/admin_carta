@@ -1,0 +1,4 @@
+.git/
+.vscode/
+public/img/uploads/
+config/config.php
