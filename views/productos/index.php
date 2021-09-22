@@ -10,6 +10,7 @@
         <thead class="head-dark">
             <tr>
                 <th>Id</th>
+                <th>Sede</th>
                 <th>Articulo</th>
                 <th>Categoria</th>
                 <th>Precio 1</th>
@@ -21,6 +22,7 @@
             <?php foreach ($data["productos"] as $value) : ?>
                 <tr>
                     <th  width="80"><?= $value["id"] ?></th>
+                    <td><?= $value["sede"] ?></td>
                     <td><?= $value["articulo"] ?></td>
                     <td><?= $value["categoria"] ?></td>
                     <td><?= $value["precio_1"] ?></td>

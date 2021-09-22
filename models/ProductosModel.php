@@ -110,8 +110,10 @@ class ProductosModel extends BaseModel{
 
     public function getAll($s = 1){
         try {
-            $sql = "SELECT p.id,p.sede_id,c.nombre as categoria,a.nombre as articulo,p.precio_1,p.precio_2 FROM productos as p inner join articulos as a on p.articulo_id=a.id
-            inner join categorias as c on a.categoria_id = c.id where p.estado=${s}";
+            $sql = "SELECT p.id,p.sede_id,s.nombre as sede,c.nombre as categoria,a.nombre as articulo,p.precio_1,p.precio_2 FROM productos as p inner join articulos as a on p.articulo_id=a.id
+            inner join categorias as c on a.categoria_id = c.id
+            inner join sedes as s on p.sede_id=s.id
+             where p.estado=${s}";
             $query = $this->db->prepare($sql);
             $query->execute();
             return $query->fetchAll();
